@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.rvonruden.app.AppTest" time="0.012" errors="0" skipped="0">
+<testsuite tests="22" failures="0" name="com.rvonruden.app.AppTest" time="0.016" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_131\jre\bin"/>
@@ -65,5 +65,26 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_1_Expect_Roman_Numeral_I" time="0.012"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_563_Expect_Roman_Numeral_DLXIII" time="0.016"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_2018_Expect_Roman_Numeral_MMXVIII" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_397_Expect_Roman_Numeral_CCCXCVII" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_1871_Expect_Roman_Numeral_MDCCCLXXI" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_54_Expect_Roman_Numeral_LIV" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_1_Expect_Roman_Numeral_I" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_8_Expect_Roman_Numeral_VIII" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_3_Expect_Roman_Numeral_III" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_7_Expect_Roman_Numeral_VII" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_15_Expect_Roman_Numeral_XV" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_39_Expect_Roman_Numeral_XXXIX" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_5_Expect_Roman_Numeral_V" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_14_Expect_Roman_Numeral_XIV" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_13_Expect_Roman_Numeral_XIII" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_1900_Expect_Roman_Numeral_MCM" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_4_Expect_Roman_Numeral_IV" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_12_Expect_Roman_Numeral_XII" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_2_Expect_Roman_Numeral_II" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_10_Expect_Roman_Numeral_X" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_6_Expect_Roman_Numeral_VI" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_9_Expect_Roman_Numeral_IX" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_11_Expect_Roman_Numeral_XI" time="0"/>
 </testsuite>
