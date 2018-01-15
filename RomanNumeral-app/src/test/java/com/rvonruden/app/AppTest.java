@@ -132,11 +132,6 @@ public class AppTest
         String actual = App.Romanize(563);
         assertEquals("DLXIII", actual);
     }
-         public void test_Given_39_Expect_Roman_Numeral_XXXIX()
-    {
-        String actual = App.Romanize(39);
-        assertEquals("XXXIX", actual);
-    }
     public void test_Given_1871_Expect_Roman_Numeral_MDCCCLXXI()
     {
         String actual = App.Romanize(1871);

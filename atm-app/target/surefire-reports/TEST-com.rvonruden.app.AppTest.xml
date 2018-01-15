@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="22" failures="0" name="com.rvonruden.app.AppTest" time="0" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.rvonruden.app.AppTest" time="0.016" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_131\jre\bin"/>
     <property name="java.vm.version" value="25.131-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Dev\java\RomanNumeral-app"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Dev\java\atm-app"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Dev\java\RomanNumeral-app"/>
+    <property name="user.dir" value="C:\Dev\java\atm-app"/>
     <property name="java.runtime.version" value="1.8.0_131-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files (x86)\Java\jdk1.8.0_131\jre\lib\endorsed"/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:\Program Files\ApacheMaven\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Users\vonrr_000\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\vonrr_000\AppData\Local\Programs\Python\Python35-32\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.151-1\bin;C:\Program Files\ApacheMaven\bin;C:\Users\vonrr_000\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\vonrr_000\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;C:\Users\vonrr_000\AppData\Local\Programs\Python\Python35-32\Scripts\;C:\Users\vonrr_000\AppData\Local\Programs\Python\Python35-32\;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Lua\5.1;C:\Program Files (x86)\Lua\5.1\clibs;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.151-1\bin;C:\Program Files\ApacheMaven\bin;C:\Program Files\Git\cmd;C:\Users\vonrr_000\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\vonrr_000\AppData\Local\GitHubDesktop\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
     <property name="maven.conf" value="C:\Program Files\ApacheMaven\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -65,26 +65,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_15_Expect_Roman_Numeral_XV" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_39_Expect_Roman_Numeral_XXXIX" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_1900_Expect_Roman_Numeral_MCM" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_14_Expect_Roman_Numeral_XIV" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_11_Expect_Roman_Numeral_XI" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_12_Expect_Roman_Numeral_XII" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_13_Expect_Roman_Numeral_XIII" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_10_Expect_Roman_Numeral_X" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_9_Expect_Roman_Numeral_IX" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_3_Expect_Roman_Numeral_III" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_5_Expect_Roman_Numeral_V" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_6_Expect_Roman_Numeral_VI" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_7_Expect_Roman_Numeral_VII" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_4_Expect_Roman_Numeral_IV" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_2_Expect_Roman_Numeral_II" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_8_Expect_Roman_Numeral_VIII" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_1_Expect_Roman_Numeral_I" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_1871_Expect_Roman_Numeral_MDCCCLXXI" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_397_Expect_Roman_Numeral_CCCXCVII" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_563_Expect_Roman_Numeral_DLXIII" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_2018_Expect_Roman_Numeral_MMXVIII" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Given_54_Expect_Roman_Numeral_LIV" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="testApp" time="0.016"/>
 </testsuite>

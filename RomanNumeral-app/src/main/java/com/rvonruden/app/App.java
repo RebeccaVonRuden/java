@@ -3,7 +3,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "The Roman numeral is " + Romanize() );
+        System.out.println( "The Roman numeral is " + Romanize(25) );
         
     }
 
