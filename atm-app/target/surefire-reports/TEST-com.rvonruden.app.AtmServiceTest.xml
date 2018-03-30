@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="com.rvonruden.app.AppTest" time="0.01" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="com.rvonruden.app.AtmServiceTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files (x86)\Java\jdk1.8.0_131\jre\bin"/>
@@ -65,7 +65,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Check_Balance" time="0.009"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Check_Balance" time="0"/>
   <testcase classname="com.rvonruden.app.AppTest" name="test_Withdraw" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_Deposit" time="0.001"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_Deposit" time="0"/>
 </testsuite>
