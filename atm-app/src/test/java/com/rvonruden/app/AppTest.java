@@ -1,5 +1,7 @@
 package com.rvonruden.app;
 
+import java.math.BigDecimal;
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -52,4 +54,16 @@ public class AppTest
         String actual = App.Deposit(accountNumber);
         assertEquals("You have deposited $99", actual);
     }
+
+    public void test_BankVault_Can_Get_Bank_Account_Happy_Path()
+    {
+        int accountNumber = 12345;
+        BigDecimal expected_balance = new BigDecimal("99.05");
+        BankVault vault = new BankVault();
+        vault.InitializeBankVault();
+        BankAccount bankAccount = vault.Get_Bank_Account(accountNumber); 
+        assertEquals(expected_balance, bankAccount.Balance());
+        assertEquals(accountNumber, bankAccount.AccountNumber());
+    }
+
 }
