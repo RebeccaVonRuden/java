@@ -66,4 +66,12 @@ public class AppTest
         assertEquals(accountNumber, bankAccount.AccountNumber());
     }
 
+    public void test_BankVault_Can_Get_Bank_Account_Not_Found()
+    {
+        int accountNumber = 54321;
+        BankVault vault = new BankVault();
+        vault.InitializeBankVault();
+        BankAccount bankAccount = vault.Get_Bank_Account(accountNumber); 
+        assertNull(bankAccount);
+    }
 }
