@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: com.rvonruden.app.AppTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.078 sec
+Tests run: 7, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.088 sec <<< FAILURE!
+test_AtmService_Can_Check_Balance(com.rvonruden.app.AppTest)  Time elapsed: 0.033 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	This method must return a result of type BigDecimal
+
+	at com.rvonruden.app.AtmService.CheckBalance(AtmService.java:15)
+	at com.rvonruden.app.AppTest.test_AtmService_Can_Check_Balance(AppTest.java:83)
+
+test_AtmService_Can_Check_Balance_Not_Found(com.rvonruden.app.AppTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.Error: Unresolved compilation problem: 
+	This method must return a result of type BigDecimal
+
+	at com.rvonruden.app.AtmService.CheckBalance(AtmService.java:15)
+	at com.rvonruden.app.AppTest.test_AtmService_Can_Check_Balance_Not_Found(AppTest.java:91)
+

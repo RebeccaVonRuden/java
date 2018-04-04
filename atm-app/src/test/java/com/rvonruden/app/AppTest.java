@@ -74,4 +74,21 @@ public class AppTest
         BankAccount bankAccount = vault.Get_Bank_Account(accountNumber); 
         assertNull(bankAccount);
     }
+
+    public void test_AtmService_Can_Check_Balance()
+    {
+        int accountNumber = 43215;
+        BigDecimal expectedBalance = new BigDecimal("50.15");
+        AtmService atmService = new AtmService();
+        BigDecimal actualBalance = atmService.CheckBalance(accountNumber);
+        assertEquals(expectedBalance, actualBalance);
+    }
+
+    public void test_AtmService_Can_Check_Balance_Not_Found()
+    {
+        int accountNumber = 54321;
+        AtmService atmService = new AtmService();
+        BigDecimal actualBalance = atmService.CheckBalance(accountNumber);
+        assertNull(actualBalance);
+    }
 }
