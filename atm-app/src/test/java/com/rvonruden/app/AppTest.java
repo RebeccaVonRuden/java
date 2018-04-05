@@ -91,4 +91,14 @@ public class AppTest
         BigDecimal actualBalance = atmService.CheckBalance(accountNumber);
         assertNull(actualBalance);
     }
+
+    public void test_AtmService_Withdraw()
+    {
+        int accountNumber = 43215;
+        BigDecimal withdrawAmmount = new BigDecimal("40.05");
+        BigDecimal expectedBalance = new BigDecimal("10.10");
+        AtmService atmService = new AtmService();
+        BigDecimal actualBalance = atmService.WithdrawFromAccount(accountNumber, withdrawAmmount);
+        assertEquals(expectedBalance, actualBalance);
+    }
 }

@@ -14,11 +14,31 @@ public class AtmService
 
     public BigDecimal CheckBalance(int accountNumber)
     {   
-        // find the Bank Account using account number
-
-        // if the bank account is found return balance
-
-        // if the bank accout is not found return null
-
+        BankAccount bankAccount = bankVault.Get_Bank_Account(accountNumber);
+        if(bankAccount != null)
+        {
+            return bankAccount.Balance();
+        }
+        return null;
+    }
+    
+    public BigDecimal WithdrawFromAccount(int accountNumber, BigDecimal withdrawAmmount)
+    {
+        // Get bank account
+        BankAccount bankAccount = bankVault.Get_Bank_Account(accountNumber);
+        // Does bank account exist
+        if(bankAccount != null)
+        {
+            // if exist does it have enough funds to withdraw
+            int canWithdraw = bankAccount.Balance().compareTo(withdrawAmmount);
+            if(canWithdraw == 0 || canWithdraw == 1)
+            {
+                // if it does withdraw funds and return balance
+                return bankAccount.Balance().subtract(withdrawAmmount);
+            }
+            return null;
+            // if it does not return null
+        }
+        return null;
     }
 }
