@@ -100,6 +100,8 @@ public class AppTest
         AtmService atmService = new AtmService();
         BigDecimal actualBalance = atmService.WithdrawFromAccount(accountNumber, withdrawAmmount);
         assertEquals(expectedBalance, actualBalance);
+        BigDecimal actualNewBalance = atmService.CheckBalance(accountNumber);
+        assertEquals(expectedBalance, actualNewBalance);
     }
 
     public void test_AtmService_Withdraw_Not_Enough_Money()
@@ -135,15 +137,32 @@ public class AppTest
         AtmService atmService = new AtmService();
         BigDecimal actualBalance = atmService.DepositToAccount(accountNumber, depositAmmount);
         assertEquals(expectedBalance, actualBalance);
+        BigDecimal actualNewBalance = atmService.CheckBalance(accountNumber);
+        assertEquals(expectedBalance, actualNewBalance);
     }
 
-    public void test_AtmService_Deopsit()
+    public void test_AtmService_Deopsit_Fail()
     {
         int accountNumber = 54321;
         BigDecimal depositAmmount = new BigDecimal("40.05");
-        BigDecimal expectedBalance = new BigDecimal("90.20");
         AtmService atmService = new AtmService();
         BigDecimal actualBalance = atmService.DepositToAccount(accountNumber, depositAmmount);
         assertNull(actualBalance);
+    }
+
+    public void test_AtmService_Does_Bank_Account_Exist_True()
+    {
+        int accountNumber = 43215;
+        AtmService atmService = new AtmService();
+        boolean BankAccountExist = atmService.DoesBankAccountExist(accountNumber);
+        assertTrue(BankAccountExist);
+    }
+
+    public void test_AtmService_Does_Bank_Account_Exist_False()
+    {
+        int accountNumber = 54321;
+        AtmService atmService = new AtmService();
+        boolean BankAccountExist = atmService.DoesBankAccountExist(accountNumber);
+        assertFalse(BankAccountExist);
     }
 }

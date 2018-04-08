@@ -12,6 +12,16 @@ public class AtmService
         bankVault.InitializeBankVault();
     }
 
+    public boolean DoesBankAccountExist(int accountNumber)
+    {
+        BankAccount bankAccount = bankVault.Get_Bank_Account(accountNumber);
+        if(bankAccount != null)
+        {
+            return true;
+        }
+        return false;
+    }
+    
     public BigDecimal CheckBalance(int accountNumber)
     {   
         BankAccount bankAccount = bankVault.Get_Bank_Account(accountNumber);
@@ -24,7 +34,6 @@ public class AtmService
     
     public BigDecimal WithdrawFromAccount(int accountNumber, BigDecimal withdrawAmmount)
     {
-        // Get bank account
         BankAccount bankAccount = bankVault.Get_Bank_Account(accountNumber);
         // Does bank account exist
         if(bankAccount != null)
@@ -34,7 +43,9 @@ public class AtmService
             if(canWithdraw == 0 || canWithdraw == 1)
             {
                 // if it does withdraw funds and return balance
-                return bankAccount.Balance().subtract(withdrawAmmount);
+                BigDecimal newBalance = bankAccount.Balance().subtract(withdrawAmmount);
+                bankAccount.Balance(newBalance);
+                return newBalance;
             }
             return null;
             // if it does not return null
@@ -49,8 +60,9 @@ public class AtmService
         // Does bank account exist
         if(bankAccount != null)
         {
-                // if it does deposit funds and return balance
-                return bankAccount.Balance().add(depositAmmount);
+                BigDecimal newBalance = bankAccount.Balance().add(depositAmmount);
+                bankAccount.Balance(newBalance);
+                return newBalance;
         }
         return null;
     }
