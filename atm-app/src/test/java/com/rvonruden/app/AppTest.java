@@ -101,4 +101,49 @@ public class AppTest
         BigDecimal actualBalance = atmService.WithdrawFromAccount(accountNumber, withdrawAmmount);
         assertEquals(expectedBalance, actualBalance);
     }
+
+    public void test_AtmService_Withdraw_Not_Enough_Money()
+    {
+        int accountNumber = 43215;
+        BigDecimal withdrawAmmount = new BigDecimal("60.30");
+        AtmService atmService = new AtmService();
+        BigDecimal actualBalance = atmService.WithdrawFromAccount(accountNumber, withdrawAmmount);
+        assertNull(actualBalance);
+    }
+
+    public void test_AtmService_Withdraw_Failure_To_Find_Account_Number()
+    {
+        try
+        {
+            int accountNumber = 54321;
+            BigDecimal withdrawAmmount = new BigDecimal("60.30");
+            AtmService atmService = new AtmService();
+            BigDecimal actualBalance = atmService.WithdrawFromAccount(accountNumber, withdrawAmmount);
+            fail("Missing exception");
+        }
+        catch(IllegalArgumentException e)
+        {
+            assertEquals("No account with that account number", e.getMessage());
+        }
+    }
+    
+    public void test_AtmService_Deopsit()
+    {
+        int accountNumber = 43215;
+        BigDecimal depositAmmount = new BigDecimal("40.05");
+        BigDecimal expectedBalance = new BigDecimal("90.20");
+        AtmService atmService = new AtmService();
+        BigDecimal actualBalance = atmService.DepositToAccount(accountNumber, depositAmmount);
+        assertEquals(expectedBalance, actualBalance);
+    }
+
+    public void test_AtmService_Deopsit()
+    {
+        int accountNumber = 54321;
+        BigDecimal depositAmmount = new BigDecimal("40.05");
+        BigDecimal expectedBalance = new BigDecimal("90.20");
+        AtmService atmService = new AtmService();
+        BigDecimal actualBalance = atmService.DepositToAccount(accountNumber, depositAmmount);
+        assertNull(actualBalance);
+    }
 }

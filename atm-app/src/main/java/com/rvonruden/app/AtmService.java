@@ -39,6 +39,19 @@ public class AtmService
             return null;
             // if it does not return null
         }
+        throw new IllegalArgumentException("No account with that account number");
+    }
+
+    public BigDecimal DepositToAccount(int accountNumber, BigDecimal depositAmmount)
+    {
+        // Get bank account
+        BankAccount bankAccount = bankVault.Get_Bank_Account(accountNumber);
+        // Does bank account exist
+        if(bankAccount != null)
+        {
+                // if it does deposit funds and return balance
+                return bankAccount.Balance().add(depositAmmount);
+        }
         return null;
     }
 }
