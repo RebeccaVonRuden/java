@@ -11,20 +11,19 @@ import javax.swing.text.DefaultStyledDocument.ElementSpec;
  */
 public class App 
 {
+    AtmService atmService = new AtmService();
+    Scanner scanner = new Scanner(System.in);
+    
     public static void main( String[] args )
     {
         System.out.println( "Welcome to Von Ruden Bank!" );
         System.out.println( "      " );
         System.out.println( "Enter bank account number" );
-        Scanner scanner = new Scanner(System.in);
         int inputAccountNumber = scanner.nextInt();
-        AtmService atmService = new AtmService();
         boolean accountExistance = atmService.DoesBankAccountExist(inputAccountNumber);
         if(accountExistance == false)
         {
-            System.out.println(" No account with that account number.");
-            System.out.println("     ");
-            System.out.println(" Try again another time");
+            noAccountWithNumber();
         }
         else
         {
@@ -36,50 +35,50 @@ public class App
             }
             else if (inputAction == 1)
             {
-                BigDecimal accountBalance = atmService.CheckBalance(inputAccountNumber);
-                System.out.println(" Your account balance is " + accountBalance);
+                CheckBalance(inputAccountNumber);
             }
             else if (inputAction == 2)
             {
-                System.out.println(" Please enter smmount to deposit");
-                BigDecimal depositAmmount = scanner.nextBigDecimal(); 
-                BigDecimal accountBalance = atmService.DepositToAccount(inputAccountNumber, depositAmmount);
-                System.out.println(" Deposit sucessful, You deposited " + depositAmmount);
-                System.out.println(" Your new account balance is " + accountBalance);
+                Deposit(inputAccountNumber);
             }
             else
             {
-                System.out.println(" Please enter smmount to withdraw");
-                BigDecimal withdrawAmmount = scanner.nextBigDecimal(); 
-                BigDecimal accountBalance = atmService.WithdrawFromAccount(inputAccountNumber, withdrawAmmount);
-                System.out.println(" Your account balance is " + accountBalance);
+               Withdraw(inputAccountNumber);
             }
         }
 
     }
     
-
-    // BankVault b = new BankVault();
-    // b.InitializeBankVault();
-    // b.CheckBalance(12345);
-
-    public static String methodToTest(int input)
+    public static void noAccountWithNumber()
     {
-        return "1";
+        System.out.println(" No account with that account number.");
+        System.out.println("     ");
+        System.out.println(" Try again another time");
     }
 
-    public static String CheckBalance(int input)
+    public static void CheckBalance(int inputAccountNumber)
     {
-        return "You have $99";
+        BigDecimal accountBalance = atmService.CheckBalance(inputAccountNumber);
+        System.out.println(" Your account balance is " + accountBalance);
     }
 
-    public static String Withdraw(int input)
+    public static void Deposit(int inputAccountNumber)
     {
-        return "You have withdrawn $99";
+        System.out.println(" Please enter smmount to deposit");
+        BigDecimal depositAmmount = scanner.nextBigDecimal(); 
+        BigDecimal accountBalance = atmService.DepositToAccount(inputAccountNumber, depositAmmount);
+        System.out.println(" Deposit sucessful, You deposited " + depositAmmount);
+        System.out.println(" Your new account balance is " + accountBalance);
     }
 
-    public static String Deposit(int input)
+    public static void Withdraw(int inputAccountNumber)
     {
-        return "You have deposited $99";
+        System.out.println(" Please enter ammount to withdraw");
+        BigDecimal withdrawAmmount = scanner.nextBigDecimal(); 
+        BigDecimal accountBalance = atmService.WithdrawFromAccount(inputAccountNumber, withdrawAmmount);
+        System.out.println(" Your account balance is " + accountBalance);
     }
 }
+    
+
+  
