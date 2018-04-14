@@ -40,7 +40,9 @@ public class AtmService
         {
             // if exist does it have enough funds to withdraw
             int canWithdraw = bankAccount.Balance().compareTo(withdrawAmmount);
-            if(canWithdraw == 0 || canWithdraw == 1)
+            int bankAccountBalanceEqualToWithdrawAmount = 0;
+            int bankAccountBalanceMoreThanToWithdrawAmount = 1;
+            if(canWithdraw == bankAccountBalanceEqualToWithdrawAmount || canWithdraw == bankAccountBalanceMoreThanToWithdrawAmount)
             {
                 // if it does withdraw funds and return balance
                 BigDecimal newBalance = bankAccount.Balance().subtract(withdrawAmmount);

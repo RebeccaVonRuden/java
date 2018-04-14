@@ -65,15 +65,15 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86"/>
   </properties>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_BankVault_Can_Get_Bank_Account_Happy_Path" time="0.02"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_BankVault_Can_Get_Bank_Account_Not_Found" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Withdraw" time="0.004"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Deopsit" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Deopsit_Fail" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Withdraw_Failure_To_Find_Account_Number" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Can_Check_Balance" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Does_Bank_Account_Exist_True" time="0"/>
-  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Withdraw_Not_Enough_Money" time="0.004"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Withdraw_Failure_To_Find_Account_Number" time="0.028"/>
   <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Does_Bank_Account_Exist_False" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_BankVault_Can_Get_Bank_Account_Not_Found" time="0"/>
   <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Can_Check_Balance_Not_Found" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Does_Bank_Account_Exist_True" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Withdraw_Not_Enough_Money" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_BankVault_Can_Get_Bank_Account_Happy_Path" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Deopsit_Fail" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Can_Check_Balance" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Deopsit" time="0"/>
+  <testcase classname="com.rvonruden.app.AppTest" name="test_AtmService_Withdraw" time="0"/>
 </testsuite>
