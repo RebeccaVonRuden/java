@@ -49,8 +49,7 @@ public class AtmService
                 bankAccount.Balance(newBalance);
                 return newBalance;
             }
-            return null;
-            // if it does not return null
+            return bankAccount.Balance();
         }
         throw new IllegalArgumentException("No account with that account number");
     }
