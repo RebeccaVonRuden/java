@@ -90,6 +90,7 @@ public class AppTest
         BigDecimal withdrawAmmount = new BigDecimal("60.30");
         AtmService atmService = new AtmService();
         BigDecimal actualBalance = atmService.WithdrawFromAccount(accountNumber, withdrawAmmount);
+        System.out.println(actualBalance);
         assertNull(actualBalance);
     }
 

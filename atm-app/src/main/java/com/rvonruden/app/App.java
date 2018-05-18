@@ -3,7 +3,6 @@ package com.rvonruden.app;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-// import javax.swing.text.DefaultStyledDocument.ElementSpec;
 
 public class App 
 {

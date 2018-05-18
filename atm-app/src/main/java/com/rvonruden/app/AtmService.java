@@ -49,7 +49,7 @@ public class AtmService
                 bankAccount.Balance(newBalance);
                 return newBalance;
             }
-            return bankAccount.Balance();
+            return null;
         }
         throw new IllegalArgumentException("No account with that account number");
     }
